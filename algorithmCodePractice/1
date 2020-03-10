@@ -1,0 +1,5 @@
+def removeDuplicates(nums):
+    for num_index in range(len(nums)-1, 0, -1):
+        if nums[num_index] == nums[num_index-1]:
+            nums.pop(num_index)
+    return len(nums)
